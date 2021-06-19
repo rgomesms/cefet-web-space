@@ -10,4 +10,5 @@ function expandableButtonClick(e) {
 	let clickedElement = e.currentTarget;
 	let parentElement = clickedElement.parentNode;
 	parentElement.classList.toggle('expandido');
+	clickedElement.innerText = parentElement.classList.contains('expandido') ? "-" : "+";
 }
